@@ -1,0 +1,53 @@
+$color-ppl: hsl(240, 25%, 95%);
+$color-sec: hsl(240, 25%, 20%);
+$color-required: hsl(0, 61%, 59%);
+
+.addressForm {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  .label {
+    margin-bottom: 0.2rem;
+    .span {
+      color: $color-required;
+    }
+  }
+  .input {
+    padding: 0.4rem;
+    border: 0;
+    border-radius: 3px;
+    margin-bottom: 0.3rem;
+  }
+  .checkbox {
+    margin: 0 0 1rem 0;
+    cursor: pointer;
+  }
+  .requiredField {
+    color: $color-required;
+    margin-bottom: 0.3rem;
+  }
+  .addBtn {
+    cursor: pointer;
+    min-width: 12.5rem;
+    margin: 0 auto;
+    background-color: $color-ppl;
+    color: $color-sec;
+    padding: 0.6rem 0.4rem;
+    border: 0;
+    border-radius: 8px;
+    font-size: 0.9rem;
+    font-weight: 600;
+    transition: 200ms all ease-in-out;
+
+    &:hover,
+    &:active {
+      background-color: scale-color($color-ppl, $lightness: -40%);
+      color: $color-ppl;
+    }
+    &:focus {
+      outline-style: solid;
+      outline-color: transparent;
+      box-shadow: 0 0 0 4px scale-color($color-ppl, $lightness: -40%);
+    }
+  }
+}

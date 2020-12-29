@@ -1,0 +1,41 @@
+* {
+  box-sizing: border-box;
+}
+$color-ppl: hsl(240, 25%, 95%);
+
+body {
+  font-family: "Open Sans", sans-serif;
+  color: $color-ppl;
+  background: hsl(240, 25%, 20%);
+}
+.App {
+  min-height: 100vh;
+  padding: 2rem;
+  .title {
+    text-align: center;
+    font-weight: 700;
+    font-size: 2.4rem;
+    margin-bottom: 4rem;
+  }
+  .wrapper {
+    display: flex;
+    justify-content: space-around;
+    .formSide {
+      width: 21.875rem;
+      .subtitle {
+        text-align: center;
+        font-weight: 700;
+        font-size: 1.4rem;
+        margin-bottom: 3rem;
+      }
+    }
+    .addressesSide {
+      .subtitle {
+        text-align: center;
+        font-weight: 700;
+        font-size: 1.4rem;
+        margin-bottom: 3rem;
+      }
+    }
+  }
+}
